@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+    <title>#{msg['register.title']}</title>
+    <h:outputStylesheet name="css/styles.css"/>
+</h:head>
+<h:body>
+    <div class="container">
+        <h2>#{msg['register.title']}</h2>
+
+        <!-- Language Switcher (Optional) -->
+        <h:form>
+        <div class="lang-container">
+            <h:commandButton value="English" action="#{languageBean.changeLanguage('en')}" styleClass="lang-button" />
+            <h:commandButton value="العربية" action="#{languageBean.changeLanguage('ar')}" styleClass="lang-button"/>
+            <h:commandButton value="French" action="#{languageBean.changeLanguage('fr')}" styleClass="lang-button"/>
+        </div>
+        </h:form>
+      
+
+        <h:form>
+            <h:outputLabel for="firstname" value="#{msg['firstname.label']}" />
+            <h:inputText id="firstname" value="#{registerBean.firstname}" />
+            
+            <h:outputLabel for="lastname" value="#{msg['lastname.label']}" />
+            <h:inputText id="lastname" value="#{registerBean.lastname}" />
+            
+            <h:outputLabel for="username" value="#{msg['username.label']}" />
+            <h:inputText id="username" value="#{registerBean.username}" />
+
+            <h:outputLabel for="password" value="#{msg['password.label']}" />
+            <h:inputSecret id="password" value="#{registerBean.password}" />
+
+            <h:commandButton value="#{msg['register.title']}" action="#{registerBean.register}" styleClass="custom-button" />
+        </h:form>
+        <h:form>
+            <h:outputLink value="login.xhtml" styleClass="styled-link">
+                #{msg['go.to.login']}
+            </h:outputLink>
+        </h:form>
+    </div>
+</h:body>
+</html>

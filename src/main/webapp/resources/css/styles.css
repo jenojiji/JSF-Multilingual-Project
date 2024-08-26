@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border-color: #aaa;
+    outline: none;
+}
+
+/* Custom Button Styles */
+.custom-button {
+    padding: 12px;
+    background-color: #28a745; /* Green shade */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.custom-button:active {
+    background-color: #1e7e34; /* Even darker green when pressed */
+    transform: scale(0.98); /* Slightly shrink button on press */
+}
+
+.message {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.message a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.message a:hover {
+    text-decoration: underline;
+}
+
+/* Language Switcher Button Styles */
+.lang-container {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Space between language buttons */
+}
+
+.lang-button {
+    padding: 6px 12px; /* Reduced padding */
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px; /* Reduced font size */
+}
+
+.lang-button:hover {
+    background-color: #e0e0e0;
+}
+
+.lang-button:active {
+    background-color: #d0d0d0; /* Even darker grey when pressed */
+    color: #000;
+}
+
+/* Style for the styled-link class */
+.styled-link {
+    color:  #000; /* Bootstrap primary color */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 10px;
+    align-self: center;
+}
+
+.styled-link:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Darker shade of the primary color */
+}
+
+

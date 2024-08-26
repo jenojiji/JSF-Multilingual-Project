@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+    <title>#{msg['login.title']}</title>
+    <h:outputStylesheet name="css/styles.css"/>
+</h:head>
+<h:body>
+    <div class="container">
+        <h2>#{msg['login.title']}</h2>
+        
+        <h:form>
+        <div class="lang-container">
+            <h:commandButton value="English" action="#{languageBean.changeLanguage('en')}" styleClass="lang-button"/>
+            <h:commandButton value="العربية" action="#{languageBean.changeLanguage('ar')}" styleClass="lang-button"/>
+            <h:commandButton value="French" action="#{languageBean.changeLanguage('fr')}" styleClass="lang-button"/>
+         </div>
+        </h:form>
+        
+        <h:form>
+            <h:outputLabel for="username" value="#{msg['username.label']}" />
+            <h:inputText id="username" value="#{loginBean.username}" />
+
+            <h:outputLabel for="password" value="#{msg['password.label']}" />
+            <h:inputSecret id="password" value="#{loginBean.password}" />
+
+            <h:commandButton value="#{msg['login.title']}" action="#{loginBean.login}" styleClass="custom-button" />
+        </h:form>
+        <h:form>
+            <h:outputLink value="register.xhtml" styleClass="styled-link">
+                #{msg['go.to.register']}
+            </h:outputLink>
+        </h:form>
+        
+    </div>
+</h:body>
+</html>
