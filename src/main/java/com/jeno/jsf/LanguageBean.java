@@ -1,13 +1,15 @@
 package com.jeno.jsf;
-import jakarta.faces.bean.ManagedBean;
+
 import jakarta.faces.context.FacesContext;
 import java.io.Serializable;
 import java.util.Locale;
-import jakarta.enterprise.context.SessionScoped;
-import jakarta.inject.Named;
 
-@ManagedBean(name = "languageBean")
-@SessionScoped 
+
+import jakarta.faces.bean.ManagedBean;
+import jakarta.faces.bean.SessionScoped;
+
+@ManagedBean(name = "registerBean")
+@SessionScoped
 public class LanguageBean implements Serializable {
 
 	private static final long serialVersionUID = 1L;

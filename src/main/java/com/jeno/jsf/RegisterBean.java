@@ -1,14 +1,15 @@
 package com.jeno.jsf;
 
-import jakarta.enterprise.context.SessionScoped;
+
 import jakarta.faces.bean.ManagedBean;
-import jakarta.inject.Named;
+import jakarta.faces.bean.SessionScoped;
 import java.io.Serializable;
 
 
 
-@SessionScoped
+
 @ManagedBean(name = "registerBean")
+@SessionScoped
 public class RegisterBean implements Serializable {
 	private static final long serialVersionUID = -1393234337581937862L;
 	private String firstname;

@@ -1,9 +1,9 @@
 package com.jeno.jsf;
 
-import jakarta.enterprise.context.SessionScoped;
 import jakarta.faces.bean.ManagedBean;
+import jakarta.faces.bean.SessionScoped;
 import jakarta.faces.context.FacesContext;
-import jakarta.inject.Named;
+
 
 import java.io.Serializable;
 

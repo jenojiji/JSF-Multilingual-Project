@@ -1,12 +1,13 @@
 package com.jeno.jsf;
 
 import java.io.Serializable;
-import jakarta.enterprise.context.SessionScoped;
+import jakarta.faces.bean.SessionScoped;
 import jakarta.faces.bean.ManagedBean;
-import jakarta.inject.Named;
 
-@SessionScoped
+
+
 @ManagedBean(name = "loginBean")
+@SessionScoped
 public class LoginBean implements Serializable {
     
 	private static final long serialVersionUID = 1L;
